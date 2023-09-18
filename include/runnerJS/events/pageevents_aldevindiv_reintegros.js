@@ -1,0 +1,2 @@
+
+Runner.pages.PageSettings.addPageEvent('aldevindiv_reintegros',Runner.pages.constants.PAGE_EDIT,"afterPageReady",function(pageObj,proxy,pageid,inlineRow,inlineObject,row){var ctrla=Runner.getControl(pageid,'sol_type');ctrla.makeReadonly();var ctrlb=Runner.getControl(pageid,'sol_userfr');ctrlb.makeReadonly();var ctrlc=Runner.getControl(pageid,'sol_userto');ctrlc.makeReadonly();var ctrld=Runner.getControl(pageid,'username_id');ctrld.makeReadonly();var ctrle=Runner.getControl(pageid,'usr_username');ctrle.makeReadonly();});

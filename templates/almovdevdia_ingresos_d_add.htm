@@ -1,0 +1,1053 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-add"   
+		>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="300px" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Expandir" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{BEGIN menuitems_main}
+<ul data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}"	class="r-menu nav menu-treelike" 
+	data-menulevel="1"
+>
+
+{BEGIN item_children1}
+<li class="
+	{$item_current}">
+<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline data-menu-top >
+	{$item_separator}
+	<span class="r-menu-link r-menu-expanded "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+		<span class="r-menu-collapsed">{$item_collicon}{$item_firstcap}</span>
+	</a>
+{BEGIN item_showchildren2}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="2">
+	{BEGIN item_children2}
+		{BEGIN item_menulink2}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+	</a>
+			{BEGIN item_showchildren3}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="3">
+	{BEGIN item_children3}
+		{BEGIN item_menulink3}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren3}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren3}
+	</span>
+	</a>
+			{BEGIN item_showchildren4}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="4">
+	{BEGIN item_children4}
+		{BEGIN item_menulink4}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren4}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren4}
+	</span>
+	</a>
+			{BEGIN item_showchildren5}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="5">
+	{BEGIN item_children5}
+		{BEGIN item_menulink5}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren5}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren5}
+	</span>
+	</a>
+					</li>
+		{END item_menulink5}
+	{END item_children5}
+</ul>
+{END item_showchildren5}
+		</li>
+		{END item_menulink4}
+	{END item_children4}
+</ul>
+{END item_showchildren4}
+		</li>
+		{END item_menulink3}
+	{END item_children3}
+</ul>
+{END item_showchildren3}
+		</li>
+		{END item_menulink2}
+	{END item_children2}
+</ul>
+{END item_showchildren2}
+</li>
+{END item_children1}
+</ul>
+{END menuitems_main}
+			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div data-resize-left="leftbar"  data-fixed class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="expand_menu_button" {$item_expand_menu_button} data-topcell-item-type="expand_menu_button" >
+				<span data-itemtype="expand_menu_button" data-itemid="expand_menu_button" {$item_expand_menu_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Muestrame el menu" class="btn-link   
+	 glyphicon glyphicon-menu-hamburger" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Encubrir" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Conectar			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN userinfo_link}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		Perfil del usuario		
+		</a>
+	</li>
+{END userinfo_link}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Desconectarse		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN changepwd_link}
+	<li data-itemtype="changepassword_link" data-itemid="changepassword_link" {$item_changepassword_link} data-pageid="{$pageid}" data-small >
+				<a  href="changepwd.php" {$changepwdlink_attrs} id="changePasswordButton{$id}"  title="" >
+				
+		Cambiar contraseña		
+		</a>
+	</li>
+{END changepwd_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" data-page="almovdevdia_ingresos_d_add" >{$pagetitlelabel almovdevdia_ingresos_d add}</h2>
+		</div>					</div>
+			</div>		
+{END top_block}
+						</div>
+											<div class="r-above">
+					{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END message_back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Ver</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Editar</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}			{END firstAboveGridCell}	
+	</div>					</div>
+			</div>		
+{END above-grid_block}
+	</div>
+<div class="r-grid">
+	{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+					{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="4"
+		
+		data-v-width="8"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c5}
+<td
+	{$cell_grid_c5}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c5" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN doclasedoc_id_fk_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="doclasedoc_id_fk{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label1" {$item_edit_field_label1} data-pageid="{$pageid}" data-field="doclasedoc_id_fk" data-fieldname="doclasedoc_id_fk" data-before-same-field {$required_attr_doclasedoc_id_fk}>
+		<label class="r-edit-label control-label" for="{$labelfor_doclasedoc_id_fk}">
+			{BEGIN doclasedoc_id_fk_label}{$label almovdevdia_ingresos_d doclasedoc_id_fk }{END doclasedoc_id_fk_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END doclasedoc_id_fk_fieldblock}
+											{BEGIN doclasedoc_id_fk_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="doclasedoc_id_fk{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-page="almovdevdia_ingresos_d_add" data-field="doclasedoc_id_fk" data-fieldname="doclasedoc_id_fk" data-before-same-field {$required_attr_doclasedoc_id_fk}>
+		{$doclasedoc_id_fk_editcontrol}	</div>
+{END doclasedoc_id_fk_fieldblock}
+											{BEGIN doclasedoc_id_fk_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="doclasedoc_id_fk{$id}" data-itemtype="edit_field_tooltip" data-itemid="edit_field_tooltip1" {$item_edit_field_tooltip1} data-pageid="{$pageid}" data-field="doclasedoc_id_fk" data-fieldname="doclasedoc_id_fk" >
+		<div data-helpfor="doclasedoc_id_fk" {$tooltipAttr almovdevdia_ingresos_d doclasedoc_id_fk } >
+			<div class="text-muted">{$tooltip almovdevdia_ingresos_d doclasedoc_id_fk }</div>
+		</div>
+	</div>
+{END doclasedoc_id_fk_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c5}
+			 
+																
+
+{BEGIN cellblock_grid_c6}
+<td
+	{$cell_grid_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c6" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN mddalmacen_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mddalmacen}  r-vertical-field" 
+	data-signal-error-for="mddalmacen{$id}" {$required_attr_mddalmacen}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="mddalmacen" data-fieldname="mddalmacen" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_mddalmacen}">
+		{BEGIN mddalmacen_label}{$label almovdevdia_ingresos_d mddalmacen }{END mddalmacen_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$mddalmacen_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="mddalmacen" {$tooltipAttr almovdevdia_ingresos_d mddalmacen } >
+		<div class="text-muted" >
+		{$tooltip almovdevdia_ingresos_d mddalmacen }		</div>
+	</div>
+</div>
+
+
+{END mddalmacen_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c6}
+			 
+																
+
+{BEGIN cellblock_grid_c7}
+<td
+	{$cell_grid_c7}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c7" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN mddnrodoc_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="mddnrodoc{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label2" {$item_edit_field_label2} data-pageid="{$pageid}" data-field="mddnrodoc" data-fieldname="mddnrodoc" data-before-same-field {$required_attr_mddnrodoc}>
+		<label class="r-edit-label control-label" for="{$labelfor_mddnrodoc}">
+			{BEGIN mddnrodoc_label}{$label almovdevdia_ingresos_d mddnrodoc }{END mddnrodoc_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END mddnrodoc_fieldblock}
+											{BEGIN mddnrodoc_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="mddnrodoc{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-page="almovdevdia_ingresos_d_add" data-field="mddnrodoc" data-fieldname="mddnrodoc" data-before-same-field {$required_attr_mddnrodoc}>
+		{$mddnrodoc_editcontrol}	</div>
+{END mddnrodoc_fieldblock}
+											{BEGIN mddnrodoc_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="mddnrodoc{$id}" data-itemtype="edit_field_tooltip" data-itemid="edit_field_tooltip2" {$item_edit_field_tooltip2} data-pageid="{$pageid}" data-field="mddnrodoc" data-fieldname="mddnrodoc" >
+		<div data-helpfor="mddnrodoc" {$tooltipAttr almovdevdia_ingresos_d mddnrodoc } >
+			<div class="text-muted">{$tooltip almovdevdia_ingresos_d mddnrodoc }</div>
+		</div>
+	</div>
+{END mddnrodoc_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c7}
+			 
+																
+
+{BEGIN cellblock_grid_c8}
+<td
+	{$cell_grid_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c8" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN mddfechadoc_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mddfechadoc}  r-vertical-field" 
+	data-signal-error-for="mddfechadoc{$id}" {$required_attr_mddfechadoc}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="mddfechadoc" data-fieldname="mddfechadoc" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_mddfechadoc}">
+		{BEGIN mddfechadoc_label}{$label almovdevdia_ingresos_d mddfechadoc }{END mddfechadoc_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$mddfechadoc_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="mddfechadoc" {$tooltipAttr almovdevdia_ingresos_d mddfechadoc } >
+		<div class="text-muted" >
+		{$tooltip almovdevdia_ingresos_d mddfechadoc }		</div>
+	</div>
+</div>
+
+
+{END mddfechadoc_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c8}
+								</tr>
+	 
+	 
+														<tr {$row_grid_1} >
+										
+
+{BEGIN cellblock_grid_c10}
+<td
+	{$cell_grid_c10}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="grid_c10" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN mddclasedoc_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mddclasedoc}  r-vertical-field" 
+	data-signal-error-for="mddclasedoc{$id}" {$required_attr_mddclasedoc}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="mddclasedoc" data-fieldname="mddclasedoc" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_mddclasedoc}">
+		{BEGIN mddclasedoc_label}{$label almovdevdia_ingresos_d mddclasedoc }{END mddclasedoc_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$mddclasedoc_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="mddclasedoc" {$tooltipAttr almovdevdia_ingresos_d mddclasedoc } >
+		<div class="text-muted" >
+		{$tooltip almovdevdia_ingresos_d mddclasedoc }		</div>
+	</div>
+</div>
+
+
+{END mddclasedoc_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c10}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c12}
+<td
+	{$cell_grid_c12}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c12" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c12}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c13}
+<td
+	{$cell_grid_c13}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c13" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c13}
+								</tr>
+	 
+	 
+																</tbody></table>
+				<div class="panel with-tabs panel-default form-tabs" data-itemtype="tabs" data-itemid="tabs" {$item_tabs} data-pageid="{$pageid}" data-page="almovdevdia_ingresos_d_add">
+	<div class="panel-heading">
+		<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section{$pageid}">
+					Información de elementos				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section1{$pageid}">
+									</a>
+			</li>
+									</ul>
+	</div>
+	<div class="panel-body">
+		<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="tab_section{$pageid}"> 
+			{BEGIN section_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section" id="form_section_{$pageid}" data-makeup="leftbar" {$form_section} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="3"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_section_0} >
+										
+
+{BEGIN cellblock_section_c10}
+<td
+	{$cell_section_c10}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c10" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN devolutivo_id_FK_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_devolutivo_id_FK}  r-vertical-field" 
+	data-signal-error-for="devolutivo_id_FK{$id}" {$required_attr_devolutivo_id_FK}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="devolutivo_id_FK" data-fieldname="devolutivo_id_FK" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_devolutivo_id_FK}">
+		{BEGIN devolutivo_id_FK_label}{$label almovdevdia_ingresos_d devolutivo_id_FK }{END devolutivo_id_FK_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$devolutivo_id_FK_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="devolutivo_id_FK" {$tooltipAttr almovdevdia_ingresos_d devolutivo_id_FK } >
+		<div class="text-muted" >
+		{$tooltip almovdevdia_ingresos_d devolutivo_id_FK }		</div>
+	</div>
+</div>
+
+
+{END devolutivo_id_FK_fieldblock}
+	
+								</td>
+			{END cellblock_section_c10}
+			 
+																
+
+{BEGIN cellblock_section_c11}
+<td
+	{$cell_section_c11}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c11" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN mddcuenta_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mddcuenta}  r-vertical-field" 
+	data-signal-error-for="mddcuenta{$id}" {$required_attr_mddcuenta}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="mddcuenta" data-fieldname="mddcuenta" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_mddcuenta}">
+		{BEGIN mddcuenta_label}{$label almovdevdia_ingresos_d mddcuenta }{END mddcuenta_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$mddcuenta_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="mddcuenta" {$tooltipAttr almovdevdia_ingresos_d mddcuenta } >
+		<div class="text-muted" >
+		{$tooltip almovdevdia_ingresos_d mddcuenta }		</div>
+	</div>
+</div>
+
+
+{END mddcuenta_fieldblock}
+	
+								</td>
+			{END cellblock_section_c11}
+			 
+																
+
+{BEGIN cellblock_section_c12}
+<td
+	{$cell_section_c12}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c12" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN mddcodelem_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mddcodelem}  r-vertical-field" 
+	data-signal-error-for="mddcodelem{$id}" {$required_attr_mddcodelem}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="mddcodelem" data-fieldname="mddcodelem" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_mddcodelem}">
+		{BEGIN mddcodelem_label}{$label almovdevdia_ingresos_d mddcodelem }{END mddcodelem_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$mddcodelem_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="mddcodelem" {$tooltipAttr almovdevdia_ingresos_d mddcodelem } >
+		<div class="text-muted" >
+		{$tooltip almovdevdia_ingresos_d mddcodelem }		</div>
+	</div>
+</div>
+
+
+{END mddcodelem_fieldblock}
+	
+								</td>
+			{END cellblock_section_c12}
+								</tr>
+	 
+	 
+														<tr {$row_section_1} >
+										
+
+{BEGIN cellblock_section_c1}
+<td
+	{$cell_section_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="3"		data-cellId="section_c1" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN mddnomelem_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mddnomelem}  r-vertical-field" 
+	data-signal-error-for="mddnomelem{$id}" {$required_attr_mddnomelem}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="mddnomelem" data-fieldname="mddnomelem" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_mddnomelem}">
+		{BEGIN mddnomelem_label}{$label almovdevdia_ingresos_d mddnomelem }{END mddnomelem_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$mddnomelem_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="mddnomelem" {$tooltipAttr almovdevdia_ingresos_d mddnomelem } >
+		<div class="text-muted" >
+		{$tooltip almovdevdia_ingresos_d mddnomelem }		</div>
+	</div>
+</div>
+
+
+{END mddnomelem_fieldblock}
+	
+								</td>
+			{END cellblock_section_c1}
+								</tr>
+	 
+	 
+														<tr {$row_section_2} >
+										
+
+{BEGIN cellblock_section_c}
+<td
+	{$cell_section_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section_c" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN mdd_valunit_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mdd_valunit}  r-vertical-field" 
+	data-signal-error-for="mdd_valunit{$id}" {$required_attr_mdd_valunit}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="mdd_valunit" data-fieldname="mdd_valunit" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_mdd_valunit}">
+		{BEGIN mdd_valunit_label}{$label almovdevdia_ingresos_d mdd_valunit }{END mdd_valunit_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$mdd_valunit_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="mdd_valunit" {$tooltipAttr almovdevdia_ingresos_d mdd_valunit } >
+		<div class="text-muted" >
+		{$tooltip almovdevdia_ingresos_d mdd_valunit }		</div>
+	</div>
+</div>
+
+
+{END mdd_valunit_fieldblock}
+	
+								</td>
+			{END cellblock_section_c}
+			 
+																
+
+{BEGIN cellblock_section_c14}
+<td
+	{$cell_section_c14}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section_c14" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN mdd_cantmovto_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="mdd_cantmovto{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label" {$item_edit_field_label} data-pageid="{$pageid}" data-field="mdd_cantmovto" data-fieldname="mdd_cantmovto" data-before-same-field {$required_attr_mdd_cantmovto}>
+		<label class="r-edit-label control-label" for="{$labelfor_mdd_cantmovto}">
+			{BEGIN mdd_cantmovto_label}{$label almovdevdia_ingresos_d mdd_cantmovto }{END mdd_cantmovto_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END mdd_cantmovto_fieldblock}
+											{BEGIN mdd_cantmovto_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="mdd_cantmovto{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="mdd_cantmovto" data-fieldname="mdd_cantmovto" data-before-same-field {$required_attr_mdd_cantmovto}>
+		{$mdd_cantmovto_editcontrol}	</div>
+{END mdd_cantmovto_fieldblock}
+											{BEGIN mdd_cantmovto_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="mdd_cantmovto{$id}" data-itemtype="edit_field_tooltip" data-itemid="edit_field_tooltip" {$item_edit_field_tooltip} data-pageid="{$pageid}" data-field="mdd_cantmovto" data-fieldname="mdd_cantmovto" >
+		<div data-helpfor="mdd_cantmovto" {$tooltipAttr almovdevdia_ingresos_d mdd_cantmovto } >
+			<div class="text-muted">{$tooltip almovdevdia_ingresos_d mdd_cantmovto }</div>
+		</div>
+	</div>
+{END mdd_cantmovto_fieldblock}
+	
+								</td>
+			{END cellblock_section_c14}
+								</tr>
+			</tbody></table>
+{END section_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section1{$pageid}"> 
+			{BEGIN section1_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section1" id="form_section1_{$pageid}" data-makeup="leftbar" {$form_section1} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section1_0} >
+										
+
+{BEGIN cellblock_section1_c1}
+<td
+	{$cell_section1_c1}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="section1_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN geusuario_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_geusuario}  r-vertical-field" 
+	data-signal-error-for="geusuario{$id}" {$required_attr_geusuario}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="geusuario" data-fieldname="geusuario" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_geusuario}">
+		{BEGIN geusuario_label}{$label almovdevdia_ingresos_d geusuario }{END geusuario_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$geusuario_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="geusuario" {$tooltipAttr almovdevdia_ingresos_d geusuario } >
+		<div class="text-muted" >
+		{$tooltip almovdevdia_ingresos_d geusuario }		</div>
+	</div>
+</div>
+
+
+{END geusuario_fieldblock}
+											
+{BEGIN mdd_cantmovto_verifica_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mdd_cantmovto_verifica}  r-vertical-field" 
+	data-signal-error-for="mdd_cantmovto_verifica{$id}" {$required_attr_mdd_cantmovto_verifica}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="mdd_cantmovto_verifica" data-fieldname="mdd_cantmovto_verifica" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_mdd_cantmovto_verifica}">
+		{BEGIN mdd_cantmovto_verifica_label}{$label almovdevdia_ingresos_d mdd_cantmovto_verifica }{END mdd_cantmovto_verifica_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$mdd_cantmovto_verifica_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="mdd_cantmovto_verifica" {$tooltipAttr almovdevdia_ingresos_d mdd_cantmovto_verifica } >
+		<div class="text-muted" >
+		{$tooltip almovdevdia_ingresos_d mdd_cantmovto_verifica }		</div>
+	</div>
+</div>
+
+
+{END mdd_cantmovto_verifica_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c1}
+								</tr>
+			</tbody></table>
+{END section1_block}
+						</div>
+				</div>
+	</div>
+</div>  	
+				 
+	 
+		
+					<table 
+	data-body-align="left"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="4"
+		
+		data-v-width="8"
+	>
+	<tbody>
+						<tr>
+						
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+	ocolspan="4"		data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="8"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+	</div>
+<div class="r-below">
+					{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	
+">
+		 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Guardar			</a>
+</span>
+	 
+		<span data-itemtype="add_reset" data-itemid="add_reset" {$item_add_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="resetButton{$id}" >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+		</div>					</div>
+			</div>		
+{END below-grid_block}
+	</div>
+
+
+
+
+										{$footer}
+				</div>
+			</div>
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	{END body}
+	</body>
+</html>

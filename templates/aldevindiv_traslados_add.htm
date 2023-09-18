@@ -1,0 +1,387 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-add" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel aldevindiv_traslados add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END message_back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Ver</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Editar</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sol_estado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sol_estado}  r-vertical-field" 
+	data-signal-error-for="sol_estado{$id}" {$required_attr_sol_estado}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="sol_estado" data-fieldname="sol_estado" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_sol_estado}">
+		{BEGIN sol_estado_label}{$label aldevindiv_traslados sol_estado }{END sol_estado_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$sol_estado_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sol_estado" {$tooltipAttr aldevindiv_traslados sol_estado } >
+		<div class="text-muted" >
+		{$tooltip aldevindiv_traslados sol_estado }		</div>
+	</div>
+</div>
+
+
+{END sol_estado_fieldblock}
+											
+{BEGIN sol_fecha_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sol_fecha}  r-vertical-field" 
+	data-signal-error-for="sol_fecha{$id}" {$required_attr_sol_fecha}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="sol_fecha" data-fieldname="sol_fecha" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_sol_fecha}">
+		{BEGIN sol_fecha_label}{$label aldevindiv_traslados sol_fecha }{END sol_fecha_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$sol_fecha_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sol_fecha" {$tooltipAttr aldevindiv_traslados sol_fecha } >
+		<div class="text-muted" >
+		{$tooltip aldevindiv_traslados sol_fecha }		</div>
+	</div>
+</div>
+
+
+{END sol_fecha_fieldblock}
+											
+{BEGIN sol_mailnot_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sol_mailnot}  r-vertical-field" 
+	data-signal-error-for="sol_mailnot{$id}" {$required_attr_sol_mailnot}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="sol_mailnot" data-fieldname="sol_mailnot" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_sol_mailnot}">
+		{BEGIN sol_mailnot_label}{$label aldevindiv_traslados sol_mailnot }{END sol_mailnot_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$sol_mailnot_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sol_mailnot" {$tooltipAttr aldevindiv_traslados sol_mailnot } >
+		<div class="text-muted" >
+		{$tooltip aldevindiv_traslados sol_mailnot }		</div>
+	</div>
+</div>
+
+
+{END sol_mailnot_fieldblock}
+											
+{BEGIN sol_obs_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sol_obs}  r-vertical-field" 
+	data-signal-error-for="sol_obs{$id}" {$required_attr_sol_obs}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="sol_obs" data-fieldname="sol_obs" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_sol_obs}">
+		{BEGIN sol_obs_label}{$label aldevindiv_traslados sol_obs }{END sol_obs_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$sol_obs_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sol_obs" {$tooltipAttr aldevindiv_traslados sol_obs } >
+		<div class="text-muted" >
+		{$tooltip aldevindiv_traslados sol_obs }		</div>
+	</div>
+</div>
+
+
+{END sol_obs_fieldblock}
+											
+{BEGIN sol_rad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sol_rad}  r-vertical-field" 
+	data-signal-error-for="sol_rad{$id}" {$required_attr_sol_rad}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="sol_rad" data-fieldname="sol_rad" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_sol_rad}">
+		{BEGIN sol_rad_label}{$label aldevindiv_traslados sol_rad }{END sol_rad_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$sol_rad_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sol_rad" {$tooltipAttr aldevindiv_traslados sol_rad } >
+		<div class="text-muted" >
+		{$tooltip aldevindiv_traslados sol_rad }		</div>
+	</div>
+</div>
+
+
+{END sol_rad_fieldblock}
+											
+{BEGIN sol_type_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sol_type}  r-vertical-field" 
+	data-signal-error-for="sol_type{$id}" {$required_attr_sol_type}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="sol_type" data-fieldname="sol_type" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_sol_type}">
+		{BEGIN sol_type_label}{$label aldevindiv_traslados sol_type }{END sol_type_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$sol_type_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sol_type" {$tooltipAttr aldevindiv_traslados sol_type } >
+		<div class="text-muted" >
+		{$tooltip aldevindiv_traslados sol_type }		</div>
+	</div>
+</div>
+
+
+{END sol_type_fieldblock}
+											
+{BEGIN sol_userfr_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sol_userfr}  r-vertical-field" 
+	data-signal-error-for="sol_userfr{$id}" {$required_attr_sol_userfr}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="sol_userfr" data-fieldname="sol_userfr" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_sol_userfr}">
+		{BEGIN sol_userfr_label}{$label aldevindiv_traslados sol_userfr }{END sol_userfr_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$sol_userfr_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sol_userfr" {$tooltipAttr aldevindiv_traslados sol_userfr } >
+		<div class="text-muted" >
+		{$tooltip aldevindiv_traslados sol_userfr }		</div>
+	</div>
+</div>
+
+
+{END sol_userfr_fieldblock}
+											
+{BEGIN sol_userto_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sol_userto}  r-vertical-field" 
+	data-signal-error-for="sol_userto{$id}" {$required_attr_sol_userto}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="sol_userto" data-fieldname="sol_userto" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_sol_userto}">
+		{BEGIN sol_userto_label}{$label aldevindiv_traslados sol_userto }{END sol_userto_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$sol_userto_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sol_userto" {$tooltipAttr aldevindiv_traslados sol_userto } >
+		<div class="text-muted" >
+		{$tooltip aldevindiv_traslados sol_userto }		</div>
+	</div>
+</div>
+
+
+{END sol_userto_fieldblock}
+											
+{BEGIN username_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_username_id}  r-vertical-field" 
+	data-signal-error-for="username_id{$id}" {$required_attr_username_id}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="username_id" data-fieldname="username_id" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_username_id}">
+		{BEGIN username_id_label}{$label aldevindiv_traslados username_id }{END username_id_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$username_id_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="username_id" {$tooltipAttr aldevindiv_traslados username_id } >
+		<div class="text-muted" >
+		{$tooltip aldevindiv_traslados username_id }		</div>
+	</div>
+</div>
+
+
+{END username_id_fieldblock}
+											
+{BEGIN usr_username_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usr_username}  r-vertical-field" 
+	data-signal-error-for="usr_username{$id}" {$required_attr_usr_username}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="usr_username" data-fieldname="usr_username" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_usr_username}">
+		{BEGIN usr_username_label}{$label aldevindiv_traslados usr_username }{END usr_username_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$usr_username_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="usr_username" {$tooltipAttr aldevindiv_traslados usr_username } >
+		<div class="text-muted" >
+		{$tooltip aldevindiv_traslados usr_username }		</div>
+	</div>
+</div>
+
+
+{END usr_username_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Guardar			</a>
+</span>
+	 
+		<span data-itemtype="add_reset" data-itemid="add_reset" {$item_add_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="resetButton{$id}" >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

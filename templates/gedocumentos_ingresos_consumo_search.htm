@@ -1,0 +1,568 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel gedocumentos_ingresos_consumo search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN as_nroasiento_fk_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_as_nroasiento_fk}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="as_nroasiento_fk{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="as_nroasiento_fk" data-fieldname="as_nroasiento_fk" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_as_nroasiento_fk}">
+		{$label gedocumentos_ingresos_consumo as_nroasiento_fk }	</label>
+	<div class="r-search-option">
+		{$searchtype_as_nroasiento_fk}
+	</div>
+	<div class="r-search-field">
+		{$as_nroasiento_fk_editcontrol}	</div>
+	<div class="r-search-field">
+		{$as_nroasiento_fk_editcontrol1}
+	</div>
+	
+</div>
+
+{END as_nroasiento_fk_fieldblock}
+											
+{BEGIN do_detalle_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_do_detalle}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="do_detalle{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="do_detalle" data-fieldname="do_detalle" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_do_detalle}">
+		{$label gedocumentos_ingresos_consumo do_detalle }	</label>
+	<div class="r-search-option">
+		{$searchtype_do_detalle}
+	</div>
+	<div class="r-search-field">
+		{$do_detalle_editcontrol}	</div>
+	<div class="r-search-field">
+		{$do_detalle_editcontrol1}
+	</div>
+	
+</div>
+
+{END do_detalle_fieldblock}
+											
+{BEGIN do_fechadoc_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_do_fechadoc}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="do_fechadoc{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="do_fechadoc" data-fieldname="do_fechadoc" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_do_fechadoc}">
+		{$label gedocumentos_ingresos_consumo do_fechadoc }	</label>
+	<div class="r-search-option">
+		{$searchtype_do_fechadoc}
+	</div>
+	<div class="r-search-field">
+		{$do_fechadoc_editcontrol}	</div>
+	<div class="r-search-field">
+		{$do_fechadoc_editcontrol1}
+	</div>
+	
+</div>
+
+{END do_fechadoc_fieldblock}
+											
+{BEGIN do_file_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_do_file}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="do_file{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="do_file" data-fieldname="do_file" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_do_file}">
+		{$label gedocumentos_ingresos_consumo do_file }	</label>
+	<div class="r-search-option">
+		{$searchtype_do_file}
+	</div>
+	<div class="r-search-field">
+		{$do_file_editcontrol}	</div>
+	<div class="r-search-field">
+		{$do_file_editcontrol1}
+	</div>
+	
+</div>
+
+{END do_file_fieldblock}
+											
+{BEGIN do_legaliza_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_do_legaliza}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="do_legaliza{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="do_legaliza" data-fieldname="do_legaliza" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_do_legaliza}">
+		{$label gedocumentos_ingresos_consumo do_legaliza }	</label>
+	<div class="r-search-option">
+		{$searchtype_do_legaliza}
+	</div>
+	<div class="r-search-field">
+		{$do_legaliza_editcontrol}	</div>
+	<div class="r-search-field">
+		{$do_legaliza_editcontrol1}
+	</div>
+	
+</div>
+
+{END do_legaliza_fieldblock}
+											
+{BEGIN do_nrodoc_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_do_nrodoc}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="do_nrodoc{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="do_nrodoc" data-fieldname="do_nrodoc" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_do_nrodoc}">
+		{$label gedocumentos_ingresos_consumo do_nrodoc }	</label>
+	<div class="r-search-option">
+		{$searchtype_do_nrodoc}
+	</div>
+	<div class="r-search-field">
+		{$do_nrodoc_editcontrol}	</div>
+	<div class="r-search-field">
+		{$do_nrodoc_editcontrol1}
+	</div>
+	
+</div>
+
+{END do_nrodoc_fieldblock}
+											
+{BEGIN do_tipodoc_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_do_tipodoc}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="do_tipodoc{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="do_tipodoc" data-fieldname="do_tipodoc" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_do_tipodoc}">
+		{$label gedocumentos_ingresos_consumo do_tipodoc }	</label>
+	<div class="r-search-option">
+		{$searchtype_do_tipodoc}
+	</div>
+	<div class="r-search-field">
+		{$do_tipodoc_editcontrol}	</div>
+	<div class="r-search-field">
+		{$do_tipodoc_editcontrol1}
+	</div>
+	
+</div>
+
+{END do_tipodoc_fieldblock}
+											
+{BEGIN do_tipomov_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_do_tipomov}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="do_tipomov{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="do_tipomov" data-fieldname="do_tipomov" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_do_tipomov}">
+		{$label gedocumentos_ingresos_consumo do_tipomov }	</label>
+	<div class="r-search-option">
+		{$searchtype_do_tipomov}
+	</div>
+	<div class="r-search-field">
+		{$do_tipomov_editcontrol}	</div>
+	<div class="r-search-field">
+		{$do_tipomov_editcontrol1}
+	</div>
+	
+</div>
+
+{END do_tipomov_fieldblock}
+											
+{BEGIN doccnit_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_doccnit}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="doccnit{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="doccnit" data-fieldname="doccnit" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_doccnit}">
+		{$label gedocumentos_ingresos_consumo doccnit }	</label>
+	<div class="r-search-option">
+		{$searchtype_doccnit}
+	</div>
+	<div class="r-search-field">
+		{$doccnit_editcontrol}	</div>
+	<div class="r-search-field">
+		{$doccnit_editcontrol1}
+	</div>
+	
+</div>
+
+{END doccnit_fieldblock}
+											
+{BEGIN doclasedoc_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_doclasedoc}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="doclasedoc{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="doclasedoc" data-fieldname="doclasedoc" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_doclasedoc}">
+		{$label gedocumentos_ingresos_consumo doclasedoc }	</label>
+	<div class="r-search-option">
+		{$searchtype_doclasedoc}
+	</div>
+	<div class="r-search-field">
+		{$doclasedoc_editcontrol}	</div>
+	<div class="r-search-field">
+		{$doclasedoc_editcontrol1}
+	</div>
+	
+</div>
+
+{END doclasedoc_fieldblock}
+											
+{BEGIN doclasedoc_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_doclasedoc_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="doclasedoc_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="doclasedoc_id" data-fieldname="doclasedoc_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_doclasedoc_id}">
+		{$label gedocumentos_ingresos_consumo doclasedoc_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_doclasedoc_id}
+	</div>
+	<div class="r-search-field">
+		{$doclasedoc_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$doclasedoc_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END doclasedoc_id_fieldblock}
+											
+{BEGIN docnomproveedor_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_docnomproveedor}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="docnomproveedor{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="docnomproveedor" data-fieldname="docnomproveedor" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_docnomproveedor}">
+		{$label gedocumentos_ingresos_consumo docnomproveedor }	</label>
+	<div class="r-search-option">
+		{$searchtype_docnomproveedor}
+	</div>
+	<div class="r-search-field">
+		{$docnomproveedor_editcontrol}	</div>
+	<div class="r-search-field">
+		{$docnomproveedor_editcontrol1}
+	</div>
+	
+</div>
+
+{END docnomproveedor_fieldblock}
+											
+{BEGIN docodregion_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_docodregion}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="docodregion{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="docodregion" data-fieldname="docodregion" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_docodregion}">
+		{$label gedocumentos_ingresos_consumo docodregion }	</label>
+	<div class="r-search-option">
+		{$searchtype_docodregion}
+	</div>
+	<div class="r-search-field">
+		{$docodregion_editcontrol}	</div>
+	<div class="r-search-field">
+		{$docodregion_editcontrol1}
+	</div>
+	
+</div>
+
+{END docodregion_fieldblock}
+											
+{BEGIN egreso_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_egreso}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="egreso{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="egreso" data-fieldname="egreso" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_egreso}">
+		{$label gedocumentos_ingresos_consumo egreso }	</label>
+	<div class="r-search-option">
+		{$searchtype_egreso}
+	</div>
+	<div class="r-search-field">
+		{$egreso_editcontrol}	</div>
+	<div class="r-search-field">
+		{$egreso_editcontrol1}
+	</div>
+	
+</div>
+
+{END egreso_fieldblock}
+											
+{BEGIN sys_fecha_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_fecha}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sys_fecha{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="sys_fecha" data-fieldname="sys_fecha" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sys_fecha}">
+		{$label gedocumentos_ingresos_consumo sys_fecha }	</label>
+	<div class="r-search-option">
+		{$searchtype_sys_fecha}
+	</div>
+	<div class="r-search-field">
+		{$sys_fecha_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sys_fecha_editcontrol1}
+	</div>
+	
+</div>
+
+{END sys_fecha_fieldblock}
+											
+{BEGIN sys_user_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_user}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sys_user{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="sys_user" data-fieldname="sys_user" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sys_user}">
+		{$label gedocumentos_ingresos_consumo sys_user }	</label>
+	<div class="r-search-option">
+		{$searchtype_sys_user}
+	</div>
+	<div class="r-search-field">
+		{$sys_user_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sys_user_editcontrol1}
+	</div>
+	
+</div>
+
+{END sys_user_fieldblock}
+											
+{BEGIN do_concepto_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_do_concepto}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="do_concepto{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="do_concepto" data-fieldname="do_concepto" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_do_concepto}">
+		{$label gedocumentos_ingresos_consumo do_concepto }	</label>
+	<div class="r-search-option">
+		{$searchtype_do_concepto}
+	</div>
+	<div class="r-search-field">
+		{$do_concepto_editcontrol}	</div>
+	<div class="r-search-field">
+		{$do_concepto_editcontrol1}
+	</div>
+	
+</div>
+
+{END do_concepto_fieldblock}
+											
+{BEGIN do_dep_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_do_dep}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="do_dep{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="do_dep" data-fieldname="do_dep" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_do_dep}">
+		{$label gedocumentos_ingresos_consumo do_dep }	</label>
+	<div class="r-search-option">
+		{$searchtype_do_dep}
+	</div>
+	<div class="r-search-field">
+		{$do_dep_editcontrol}	</div>
+	<div class="r-search-field">
+		{$do_dep_editcontrol1}
+	</div>
+	
+</div>
+
+{END do_dep_fieldblock}
+											
+{BEGIN do_depsup_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_do_depsup}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="do_depsup{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field18" {$item_integrated_search_field18} data-pageid="{$pageid}" data-field="do_depsup" data-fieldname="do_depsup" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_do_depsup}">
+		{$label gedocumentos_ingresos_consumo do_depsup }	</label>
+	<div class="r-search-option">
+		{$searchtype_do_depsup}
+	</div>
+	<div class="r-search-field">
+		{$do_depsup_editcontrol}	</div>
+	<div class="r-search-field">
+		{$do_depsup_editcontrol1}
+	</div>
+	
+</div>
+
+{END do_depsup_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} data-page=undefined >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

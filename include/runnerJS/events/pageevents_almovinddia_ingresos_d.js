@@ -1,0 +1,2 @@
+
+Runner.pages.PageSettings.addPageEvent('almovinddia_ingresos_d',Runner.pages.constants.PAGE_EDIT,"afterPageReady",function(pageObj,proxy,pageid,inlineRow,inlineObject,row){var ctrl=Runner.getControl(pageid,'devolutivo_id_FK');ctrl.makeReadonly();});

@@ -1,0 +1,656 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel aldevindiv_sol search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sol_estado_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sol_estado}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sol_estado{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="sol_estado" data-fieldname="sol_estado" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sol_estado}">
+		{$label aldevindiv_sol sol_estado }	</label>
+	<div class="r-search-option">
+		{$searchtype_sol_estado}
+	</div>
+	<div class="r-search-field">
+		{$sol_estado_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sol_estado_editcontrol1}
+	</div>
+	
+</div>
+
+{END sol_estado_fieldblock}
+											
+{BEGIN sol_fecha_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sol_fecha}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sol_fecha{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="sol_fecha" data-fieldname="sol_fecha" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sol_fecha}">
+		{$label aldevindiv_sol sol_fecha }	</label>
+	<div class="r-search-option">
+		{$searchtype_sol_fecha}
+	</div>
+	<div class="r-search-field">
+		{$sol_fecha_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sol_fecha_editcontrol1}
+	</div>
+	
+</div>
+
+{END sol_fecha_fieldblock}
+											
+{BEGIN sol_mailnot_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sol_mailnot}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sol_mailnot{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="sol_mailnot" data-fieldname="sol_mailnot" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sol_mailnot}">
+		{$label aldevindiv_sol sol_mailnot }	</label>
+	<div class="r-search-option">
+		{$searchtype_sol_mailnot}
+	</div>
+	<div class="r-search-field">
+		{$sol_mailnot_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sol_mailnot_editcontrol1}
+	</div>
+	
+</div>
+
+{END sol_mailnot_fieldblock}
+											
+{BEGIN sol_obs_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sol_obs}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sol_obs{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="sol_obs" data-fieldname="sol_obs" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sol_obs}">
+		{$label aldevindiv_sol sol_obs }	</label>
+	<div class="r-search-option">
+		{$searchtype_sol_obs}
+	</div>
+	<div class="r-search-field">
+		{$sol_obs_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sol_obs_editcontrol1}
+	</div>
+	
+</div>
+
+{END sol_obs_fieldblock}
+											
+{BEGIN sol_rad_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sol_rad}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sol_rad{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="sol_rad" data-fieldname="sol_rad" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sol_rad}">
+		{$label aldevindiv_sol sol_rad }	</label>
+	<div class="r-search-option">
+		{$searchtype_sol_rad}
+	</div>
+	<div class="r-search-field">
+		{$sol_rad_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sol_rad_editcontrol1}
+	</div>
+	
+</div>
+
+{END sol_rad_fieldblock}
+											
+{BEGIN sol_type_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sol_type}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sol_type{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="sol_type" data-fieldname="sol_type" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sol_type}">
+		{$label aldevindiv_sol sol_type }	</label>
+	<div class="r-search-option">
+		{$searchtype_sol_type}
+	</div>
+	<div class="r-search-field">
+		{$sol_type_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sol_type_editcontrol1}
+	</div>
+	
+</div>
+
+{END sol_type_fieldblock}
+											
+{BEGIN sol_userfr_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sol_userfr}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sol_userfr{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="sol_userfr" data-fieldname="sol_userfr" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sol_userfr}">
+		{$label aldevindiv_sol sol_userfr }	</label>
+	<div class="r-search-option">
+		{$searchtype_sol_userfr}
+	</div>
+	<div class="r-search-field">
+		{$sol_userfr_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sol_userfr_editcontrol1}
+	</div>
+	
+</div>
+
+{END sol_userfr_fieldblock}
+											
+{BEGIN sol_userid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sol_userid}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sol_userid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="sol_userid" data-fieldname="sol_userid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sol_userid}">
+		{$label aldevindiv_sol sol_userid }	</label>
+	<div class="r-search-option">
+		{$searchtype_sol_userid}
+	</div>
+	<div class="r-search-field">
+		{$sol_userid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sol_userid_editcontrol1}
+	</div>
+	
+</div>
+
+{END sol_userid_fieldblock}
+											
+{BEGIN sol_userto_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sol_userto}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sol_userto{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="sol_userto" data-fieldname="sol_userto" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sol_userto}">
+		{$label aldevindiv_sol sol_userto }	</label>
+	<div class="r-search-option">
+		{$searchtype_sol_userto}
+	</div>
+	<div class="r-search-field">
+		{$sol_userto_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sol_userto_editcontrol1}
+	</div>
+	
+</div>
+
+{END sol_userto_fieldblock}
+											
+{BEGIN transact_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_transact_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="transact_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="transact_id" data-fieldname="transact_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_transact_id}">
+		{$label aldevindiv_sol transact_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_transact_id}
+	</div>
+	<div class="r-search-field">
+		{$transact_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$transact_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END transact_id_fieldblock}
+											
+{BEGIN username_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_username_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="username_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="username_id" data-fieldname="username_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_username_id}">
+		{$label aldevindiv_sol username_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_username_id}
+	</div>
+	<div class="r-search-field">
+		{$username_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$username_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END username_id_fieldblock}
+											
+{BEGIN usr_fecha_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usr_fecha}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="usr_fecha{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="usr_fecha" data-fieldname="usr_fecha" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_usr_fecha}">
+		{$label aldevindiv_sol usr_fecha }	</label>
+	<div class="r-search-option">
+		{$searchtype_usr_fecha}
+	</div>
+	<div class="r-search-field">
+		{$usr_fecha_editcontrol}	</div>
+	<div class="r-search-field">
+		{$usr_fecha_editcontrol1}
+	</div>
+	
+</div>
+
+{END usr_fecha_fieldblock}
+											
+{BEGIN usr_username_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usr_username}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="usr_username{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="usr_username" data-fieldname="usr_username" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_usr_username}">
+		{$label aldevindiv_sol usr_username }	</label>
+	<div class="r-search-option">
+		{$searchtype_usr_username}
+	</div>
+	<div class="r-search-field">
+		{$usr_username_editcontrol}	</div>
+	<div class="r-search-field">
+		{$usr_username_editcontrol1}
+	</div>
+	
+</div>
+
+{END usr_username_fieldblock}
+											
+{BEGIN sign_a_user_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sign_a_user}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sign_a_user{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="sign_a_user" data-fieldname="sign_a_user" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sign_a_user}">
+		{$label aldevindiv_sol sign_a_user }	</label>
+	<div class="r-search-option">
+		{$searchtype_sign_a_user}
+	</div>
+	<div class="r-search-field">
+		{$sign_a_user_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sign_a_user_editcontrol1}
+	</div>
+	
+</div>
+
+{END sign_a_user_fieldblock}
+											
+{BEGIN sign_a_documento_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sign_a_documento}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sign_a_documento{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="sign_a_documento" data-fieldname="sign_a_documento" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sign_a_documento}">
+		{$label aldevindiv_sol sign_a_documento }	</label>
+	<div class="r-search-option">
+		{$searchtype_sign_a_documento}
+	</div>
+	<div class="r-search-field">
+		{$sign_a_documento_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sign_a_documento_editcontrol1}
+	</div>
+	
+</div>
+
+{END sign_a_documento_fieldblock}
+											
+{BEGIN sign_a_email_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sign_a_email}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sign_a_email{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="sign_a_email" data-fieldname="sign_a_email" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sign_a_email}">
+		{$label aldevindiv_sol sign_a_email }	</label>
+	<div class="r-search-option">
+		{$searchtype_sign_a_email}
+	</div>
+	<div class="r-search-field">
+		{$sign_a_email_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sign_a_email_editcontrol1}
+	</div>
+	
+</div>
+
+{END sign_a_email_fieldblock}
+											
+{BEGIN sign_b_user_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sign_b_user}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sign_b_user{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="sign_b_user" data-fieldname="sign_b_user" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sign_b_user}">
+		{$label aldevindiv_sol sign_b_user }	</label>
+	<div class="r-search-option">
+		{$searchtype_sign_b_user}
+	</div>
+	<div class="r-search-field">
+		{$sign_b_user_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sign_b_user_editcontrol1}
+	</div>
+	
+</div>
+
+{END sign_b_user_fieldblock}
+											
+{BEGIN sign_b_documento_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sign_b_documento}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sign_b_documento{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="sign_b_documento" data-fieldname="sign_b_documento" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sign_b_documento}">
+		{$label aldevindiv_sol sign_b_documento }	</label>
+	<div class="r-search-option">
+		{$searchtype_sign_b_documento}
+	</div>
+	<div class="r-search-field">
+		{$sign_b_documento_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sign_b_documento_editcontrol1}
+	</div>
+	
+</div>
+
+{END sign_b_documento_fieldblock}
+											
+{BEGIN sign_b_email_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sign_b_email}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sign_b_email{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field18" {$item_integrated_search_field18} data-pageid="{$pageid}" data-field="sign_b_email" data-fieldname="sign_b_email" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sign_b_email}">
+		{$label aldevindiv_sol sign_b_email }	</label>
+	<div class="r-search-option">
+		{$searchtype_sign_b_email}
+	</div>
+	<div class="r-search-field">
+		{$sign_b_email_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sign_b_email_editcontrol1}
+	</div>
+	
+</div>
+
+{END sign_b_email_fieldblock}
+											
+{BEGIN sign_a_hash_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sign_a_hash}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sign_a_hash{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field19" {$item_integrated_search_field19} data-pageid="{$pageid}" data-field="sign_a_hash" data-fieldname="sign_a_hash" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sign_a_hash}">
+		{$label aldevindiv_sol sign_a_hash }	</label>
+	<div class="r-search-option">
+		{$searchtype_sign_a_hash}
+	</div>
+	<div class="r-search-field">
+		{$sign_a_hash_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sign_a_hash_editcontrol1}
+	</div>
+	
+</div>
+
+{END sign_a_hash_fieldblock}
+											
+{BEGIN sign_b_hash_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sign_b_hash}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sign_b_hash{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field20" {$item_integrated_search_field20} data-pageid="{$pageid}" data-field="sign_b_hash" data-fieldname="sign_b_hash" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sign_b_hash}">
+		{$label aldevindiv_sol sign_b_hash }	</label>
+	<div class="r-search-option">
+		{$searchtype_sign_b_hash}
+	</div>
+	<div class="r-search-field">
+		{$sign_b_hash_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sign_b_hash_editcontrol1}
+	</div>
+	
+</div>
+
+{END sign_b_hash_fieldblock}
+											
+{BEGIN sign_a_qr_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sign_a_qr}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sign_a_qr{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field21" {$item_integrated_search_field21} data-pageid="{$pageid}" data-field="sign_a_qr" data-fieldname="sign_a_qr" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sign_a_qr}">
+		{$label aldevindiv_sol sign_a_qr }	</label>
+	<div class="r-search-option">
+		{$searchtype_sign_a_qr}
+	</div>
+	<div class="r-search-field">
+		{$sign_a_qr_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sign_a_qr_editcontrol1}
+	</div>
+	
+</div>
+
+{END sign_a_qr_fieldblock}
+											
+{BEGIN sign_b_qr_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sign_b_qr}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sign_b_qr{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field22" {$item_integrated_search_field22} data-pageid="{$pageid}" data-field="sign_b_qr" data-fieldname="sign_b_qr" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sign_b_qr}">
+		{$label aldevindiv_sol sign_b_qr }	</label>
+	<div class="r-search-option">
+		{$searchtype_sign_b_qr}
+	</div>
+	<div class="r-search-field">
+		{$sign_b_qr_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sign_b_qr_editcontrol1}
+	</div>
+	
+</div>
+
+{END sign_b_qr_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} data-page=undefined >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

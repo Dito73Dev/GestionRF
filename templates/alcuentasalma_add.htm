@@ -1,0 +1,897 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-add"   
+		>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="300px" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Expandir" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{BEGIN menuitems_main}
+<ul data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}"	class="r-menu nav menu-treelike" 
+	data-menulevel="1"
+>
+
+{BEGIN item_children1}
+<li class="
+	{$item_current}">
+<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline data-menu-top >
+	{$item_separator}
+	<span class="r-menu-link r-menu-expanded "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+		<span class="r-menu-collapsed">{$item_collicon}{$item_firstcap}</span>
+	</a>
+{BEGIN item_showchildren2}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="2">
+	{BEGIN item_children2}
+		{BEGIN item_menulink2}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+	</a>
+			{BEGIN item_showchildren3}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="3">
+	{BEGIN item_children3}
+		{BEGIN item_menulink3}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren3}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren3}
+	</span>
+	</a>
+			{BEGIN item_showchildren4}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="4">
+	{BEGIN item_children4}
+		{BEGIN item_menulink4}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren4}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren4}
+	</span>
+	</a>
+			{BEGIN item_showchildren5}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="5">
+	{BEGIN item_children5}
+		{BEGIN item_menulink5}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren5}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren5}
+	</span>
+	</a>
+					</li>
+		{END item_menulink5}
+	{END item_children5}
+</ul>
+{END item_showchildren5}
+		</li>
+		{END item_menulink4}
+	{END item_children4}
+</ul>
+{END item_showchildren4}
+		</li>
+		{END item_menulink3}
+	{END item_children3}
+</ul>
+{END item_showchildren3}
+		</li>
+		{END item_menulink2}
+	{END item_children2}
+</ul>
+{END item_showchildren2}
+</li>
+{END item_children1}
+</ul>
+{END menuitems_main}
+			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div data-resize-left="leftbar"  data-fixed class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="expand_menu_button" {$item_expand_menu_button} data-topcell-item-type="expand_menu_button" >
+				<span data-itemtype="expand_menu_button" data-itemid="expand_menu_button" {$item_expand_menu_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Muestrame el menu" class="btn-link   
+	 glyphicon glyphicon-menu-hamburger" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Encubrir" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Conectar			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN userinfo_link}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		Perfil del usuario		
+		</a>
+	</li>
+{END userinfo_link}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Desconectarse		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN changepwd_link}
+	<li data-itemtype="changepassword_link" data-itemid="changepassword_link" {$item_changepassword_link} data-pageid="{$pageid}" data-small >
+				<a  href="changepwd.php" {$changepwdlink_attrs} id="changePasswordButton{$id}"  title="" >
+				
+		Cambiar contraseña		
+		</a>
+	</li>
+{END changepwd_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" data-page="alcuentasalma_add" >{$pagetitlelabel alcuentasalma add}</h2>
+		</div>					</div>
+			</div>		
+{END top_block}
+						</div>
+											<div class="r-above">
+					{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END message_back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Ver</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Editar</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}			{END firstAboveGridCell}	
+	</div>					</div>
+			</div>		
+{END above-grid_block}
+	</div>
+<div class="r-grid">
+	{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+					{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<div class="panel with-tabs panel-default form-tabs" data-itemtype="tabs" data-itemid="tabs" {$item_tabs} data-pageid="{$pageid}" data-page="alcuentasalma_add">
+	<div class="panel-heading">
+		<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section{$pageid}">
+					Inf. Cuenta				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section1{$pageid}">
+					Inf. Contable				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section2{$pageid}">
+					...Más				</a>
+			</li>
+									</ul>
+	</div>
+	<div class="panel-body">
+		<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="tab_section{$pageid}"> 
+			{BEGIN section_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section" id="form_section_{$pageid}" data-makeup="leftbar" {$form_section} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section_0} >
+										
+
+{BEGIN cellblock_section_c1}
+<td
+	{$cell_section_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c1" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN tac_codcta_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tac_codcta}  r-vertical-field" 
+	data-signal-error-for="tac_codcta{$id}" {$required_attr_tac_codcta}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="tac_codcta" data-fieldname="tac_codcta" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_tac_codcta}">
+		{BEGIN tac_codcta_label}{$label alcuentasalma tac_codcta }{END tac_codcta_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$tac_codcta_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tac_codcta" {$tooltipAttr alcuentasalma tac_codcta } >
+		<div class="text-muted" >
+		{$tooltip alcuentasalma tac_codcta }		</div>
+	</div>
+</div>
+
+
+{END tac_codcta_fieldblock}
+	
+								</td>
+			{END cellblock_section_c1}
+			 
+		
+							
+
+{BEGIN cellblock_section_c}
+<td
+	{$cell_section_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section_c}
+								</tr>
+	 
+	 
+														<tr {$row_section_1} >
+										
+
+{BEGIN cellblock_section_c4}
+<td
+	{$cell_section_c4}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c4" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ca_codcuenta_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ca_codcuenta}  r-vertical-field" 
+	data-signal-error-for="ca_codcuenta{$id}" {$required_attr_ca_codcuenta}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="ca_codcuenta" data-fieldname="ca_codcuenta" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ca_codcuenta}">
+		{BEGIN ca_codcuenta_label}{$label alcuentasalma ca_codcuenta }{END ca_codcuenta_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$ca_codcuenta_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ca_codcuenta" {$tooltipAttr alcuentasalma ca_codcuenta } >
+		<div class="text-muted" >
+		{$tooltip alcuentasalma ca_codcuenta }		</div>
+	</div>
+</div>
+
+
+{END ca_codcuenta_fieldblock}
+	
+								</td>
+			{END cellblock_section_c4}
+			 
+																
+
+{BEGIN cellblock_section_c5}
+<td
+	{$cell_section_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c5" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ca_nomcuenta_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ca_nomcuenta}  r-vertical-field" 
+	data-signal-error-for="ca_nomcuenta{$id}" {$required_attr_ca_nomcuenta}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="ca_nomcuenta" data-fieldname="ca_nomcuenta" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ca_nomcuenta}">
+		{BEGIN ca_nomcuenta_label}{$label alcuentasalma ca_nomcuenta }{END ca_nomcuenta_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$ca_nomcuenta_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ca_nomcuenta" {$tooltipAttr alcuentasalma ca_nomcuenta } >
+		<div class="text-muted" >
+		{$tooltip alcuentasalma ca_nomcuenta }		</div>
+	</div>
+</div>
+
+
+{END ca_nomcuenta_fieldblock}
+	
+								</td>
+			{END cellblock_section_c5}
+								</tr>
+	 
+	 
+														<tr {$row_section_2} >
+										
+
+{BEGIN cellblock_section_c2}
+<td
+	{$cell_section_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c2" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ca_recibemovto_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ca_recibemovto}  r-vertical-field" 
+	data-signal-error-for="ca_recibemovto{$id}" {$required_attr_ca_recibemovto}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="ca_recibemovto" data-fieldname="ca_recibemovto" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ca_recibemovto}">
+		{BEGIN ca_recibemovto_label}{$label alcuentasalma ca_recibemovto }{END ca_recibemovto_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$ca_recibemovto_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ca_recibemovto" {$tooltipAttr alcuentasalma ca_recibemovto } >
+		<div class="text-muted" >
+		{$tooltip alcuentasalma ca_recibemovto }		</div>
+	</div>
+</div>
+
+
+{END ca_recibemovto_fieldblock}
+	
+								</td>
+			{END cellblock_section_c2}
+			 
+																
+
+{BEGIN cellblock_section_c3}
+<td
+	{$cell_section_c3}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section_c3" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN tac_vidautil_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="tac_vidautil{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label" {$item_edit_field_label} data-pageid="{$pageid}" data-field="tac_vidautil" data-fieldname="tac_vidautil" data-before-same-field {$required_attr_tac_vidautil}>
+		<label class="r-edit-label control-label" for="{$labelfor_tac_vidautil}">
+			{BEGIN tac_vidautil_label}{$label alcuentasalma tac_vidautil }{END tac_vidautil_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END tac_vidautil_fieldblock}
+											{BEGIN tac_vidautil_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="tac_vidautil{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="tac_vidautil" data-fieldname="tac_vidautil" data-before-same-field {$required_attr_tac_vidautil}>
+		{$tac_vidautil_editcontrol}	</div>
+{END tac_vidautil_fieldblock}
+											{BEGIN tac_vidautil_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="tac_vidautil{$id}" data-itemtype="edit_field_tooltip" data-itemid="edit_field_tooltip" {$item_edit_field_tooltip} data-pageid="{$pageid}" data-field="tac_vidautil" data-fieldname="tac_vidautil" >
+		<div data-helpfor="tac_vidautil" {$tooltipAttr alcuentasalma tac_vidautil } >
+			<div class="text-muted">{$tooltip alcuentasalma tac_vidautil }</div>
+		</div>
+	</div>
+{END tac_vidautil_fieldblock}
+	
+								</td>
+			{END cellblock_section_c3}
+								</tr>
+			</tbody></table>
+{END section_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section1{$pageid}"> 
+			{BEGIN section1_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section1" id="form_section1_{$pageid}" data-makeup="leftbar" {$form_section1} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section1_0} >
+										
+
+{BEGIN cellblock_section1_c1}
+<td
+	{$cell_section1_c1}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section1_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text" {$item_text} data-pageid="{$pageid}" data-small > 
+	<p><strong>PROPIEDADES, PLANTA Y EQUIPO | BIENES MUEBLES EN BODEGA</strong></p></span>
+											{BEGIN nicsp_cuentacostonew_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="nicsp_cuentacostonew{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label1" {$item_edit_field_label1} data-pageid="{$pageid}" data-field="nicsp_cuentacostonew" data-fieldname="nicsp_cuentacostonew" data-before-same-field {$required_attr_nicsp_cuentacostonew}>
+		<label class="r-edit-label control-label" for="{$labelfor_nicsp_cuentacostonew}">
+			{BEGIN nicsp_cuentacostonew_label}{$label alcuentasalma nicsp_cuentacostonew }{END nicsp_cuentacostonew_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END nicsp_cuentacostonew_fieldblock}
+											{BEGIN nicsp_cuentacostonew_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="nicsp_cuentacostonew{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="nicsp_cuentacostonew" data-fieldname="nicsp_cuentacostonew" data-before-same-field {$required_attr_nicsp_cuentacostonew}>
+		{$nicsp_cuentacostonew_editcontrol}	</div>
+{END nicsp_cuentacostonew_fieldblock}
+											{BEGIN nicsp_cuentacostonew_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="nicsp_cuentacostonew{$id}" data-itemtype="edit_field_tooltip" data-itemid="edit_field_tooltip1" {$item_edit_field_tooltip1} data-pageid="{$pageid}" data-field="nicsp_cuentacostonew" data-fieldname="nicsp_cuentacostonew" >
+		<div data-helpfor="nicsp_cuentacostonew" {$tooltipAttr alcuentasalma nicsp_cuentacostonew } >
+			<div class="text-muted">{$tooltip alcuentasalma nicsp_cuentacostonew }</div>
+		</div>
+	</div>
+{END nicsp_cuentacostonew_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c1}
+								</tr>
+	 
+	 
+														<tr {$row_section1_1} >
+										
+
+{BEGIN cellblock_section1_c}
+<td
+	{$cell_section1_c}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section1_c" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text1" {$item_text1} data-pageid="{$pageid}" data-small > 
+	<p><strong>PROPIEDADES, PLANTA Y EQUIPO | EN SERVICIO</strong></p></span>
+											{BEGIN nicsp_cuentacostoservicio_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="nicsp_cuentacostoservicio{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label2" {$item_edit_field_label2} data-pageid="{$pageid}" data-field="nicsp_cuentacostoservicio" data-fieldname="nicsp_cuentacostoservicio" data-before-same-field {$required_attr_nicsp_cuentacostoservicio}>
+		<label class="r-edit-label control-label" for="{$labelfor_nicsp_cuentacostoservicio}">
+			{BEGIN nicsp_cuentacostoservicio_label}{$label alcuentasalma nicsp_cuentacostoservicio }{END nicsp_cuentacostoservicio_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END nicsp_cuentacostoservicio_fieldblock}
+											{BEGIN nicsp_cuentacostoservicio_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="nicsp_cuentacostoservicio{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="nicsp_cuentacostoservicio" data-fieldname="nicsp_cuentacostoservicio" data-before-same-field {$required_attr_nicsp_cuentacostoservicio}>
+		{$nicsp_cuentacostoservicio_editcontrol}	</div>
+{END nicsp_cuentacostoservicio_fieldblock}
+											{BEGIN nicsp_cuentacostoservicio_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="nicsp_cuentacostoservicio{$id}" data-itemtype="edit_field_tooltip" data-itemid="edit_field_tooltip2" {$item_edit_field_tooltip2} data-pageid="{$pageid}" data-field="nicsp_cuentacostoservicio" data-fieldname="nicsp_cuentacostoservicio" >
+		<div data-helpfor="nicsp_cuentacostoservicio" {$tooltipAttr alcuentasalma nicsp_cuentacostoservicio } >
+			<div class="text-muted">{$tooltip alcuentasalma nicsp_cuentacostoservicio }</div>
+		</div>
+	</div>
+{END nicsp_cuentacostoservicio_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c}
+								</tr>
+			</tbody></table>
+{END section1_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section2{$pageid}"> 
+			{BEGIN section2_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section2" id="form_section2_{$pageid}" data-makeup="leftbar" {$form_section2} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section2_0} >
+										
+
+{BEGIN cellblock_section2_c1}
+<td
+	{$cell_section2_c1}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section2_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text2" {$item_text2} data-pageid="{$pageid}" data-small > 
+	<p><strong>DEPRECIACIÓN ACUMULADA DE PROPIEDADES, PLANTA Y EQUIPO (CR)</strong></p><p><br></p></span>
+											{BEGIN nicsp_cuentadepcod_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="nicsp_cuentadepcod{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label3" {$item_edit_field_label3} data-pageid="{$pageid}" data-field="nicsp_cuentadepcod" data-fieldname="nicsp_cuentadepcod" data-before-same-field {$required_attr_nicsp_cuentadepcod}>
+		<label class="r-edit-label control-label" for="{$labelfor_nicsp_cuentadepcod}">
+			{BEGIN nicsp_cuentadepcod_label}{$label alcuentasalma nicsp_cuentadepcod }{END nicsp_cuentadepcod_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END nicsp_cuentadepcod_fieldblock}
+											{BEGIN nicsp_cuentadepcod_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="nicsp_cuentadepcod{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="nicsp_cuentadepcod" data-fieldname="nicsp_cuentadepcod" data-before-same-field {$required_attr_nicsp_cuentadepcod}>
+		{$nicsp_cuentadepcod_editcontrol}	</div>
+{END nicsp_cuentadepcod_fieldblock}
+											{BEGIN nicsp_cuentadepcod_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="nicsp_cuentadepcod{$id}" data-itemtype="edit_field_tooltip" data-itemid="edit_field_tooltip3" {$item_edit_field_tooltip3} data-pageid="{$pageid}" data-field="nicsp_cuentadepcod" data-fieldname="nicsp_cuentadepcod" >
+		<div data-helpfor="nicsp_cuentadepcod" {$tooltipAttr alcuentasalma nicsp_cuentadepcod } >
+			<div class="text-muted">{$tooltip alcuentasalma nicsp_cuentadepcod }</div>
+		</div>
+	</div>
+{END nicsp_cuentadepcod_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c1}
+								</tr>
+	 
+	 
+														<tr {$row_section2_1} >
+										
+
+{BEGIN cellblock_section2_c}
+<td
+	{$cell_section2_c}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="section2_c" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text3" {$item_text3} data-pageid="{$pageid}" data-small > 
+	<p><strong>BIENES Y DERECHOS RETIRADOS</strong></p><p><br></p></span>
+	
+								</td>
+			{END cellblock_section2_c}
+								</tr>
+	 
+	 
+														<tr {$row_section2_2} >
+										
+
+{BEGIN cellblock_section2_c3}
+<td
+	{$cell_section2_c3}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section2_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN nicsp_cuentacostocodnopp_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="nicsp_cuentacostocodnopp{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label4" {$item_edit_field_label4} data-pageid="{$pageid}" data-field="nicsp_cuentacostocodnopp" data-fieldname="nicsp_cuentacostocodnopp" data-before-same-field {$required_attr_nicsp_cuentacostocodnopp}>
+		<label class="r-edit-label control-label" for="{$labelfor_nicsp_cuentacostocodnopp}">
+			{BEGIN nicsp_cuentacostocodnopp_label}{$label alcuentasalma nicsp_cuentacostocodnopp }{END nicsp_cuentacostocodnopp_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END nicsp_cuentacostocodnopp_fieldblock}
+											{BEGIN nicsp_cuentacostocodnopp_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="nicsp_cuentacostocodnopp{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="nicsp_cuentacostocodnopp" data-fieldname="nicsp_cuentacostocodnopp" data-before-same-field {$required_attr_nicsp_cuentacostocodnopp}>
+		{$nicsp_cuentacostocodnopp_editcontrol}	</div>
+{END nicsp_cuentacostocodnopp_fieldblock}
+											{BEGIN nicsp_cuentacostocodnopp_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="nicsp_cuentacostocodnopp{$id}" data-itemtype="edit_field_tooltip" data-itemid="edit_field_tooltip4" {$item_edit_field_tooltip4} data-pageid="{$pageid}" data-field="nicsp_cuentacostocodnopp" data-fieldname="nicsp_cuentacostocodnopp" >
+		<div data-helpfor="nicsp_cuentacostocodnopp" {$tooltipAttr alcuentasalma nicsp_cuentacostocodnopp } >
+			<div class="text-muted">{$tooltip alcuentasalma nicsp_cuentacostocodnopp }</div>
+		</div>
+	</div>
+{END nicsp_cuentacostocodnopp_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c3}
+								</tr>
+			</tbody></table>
+{END section2_block}
+						</div>
+				</div>
+	</div>
+</div>  	
+				{END grid_block}
+	</div>
+<div class="r-below">
+					{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	
+">
+		 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Guardar			</a>
+</span>
+	 
+		<span data-itemtype="add_reset" data-itemid="add_reset" {$item_add_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="resetButton{$id}" >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+		</div>					</div>
+			</div>		
+{END below-grid_block}
+	</div>
+
+
+
+
+										{$footer}
+				</div>
+			</div>
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	{END body}
+	</body>
+</html>
